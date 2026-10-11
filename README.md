@@ -3,6 +3,10 @@
 A responsive website project for an event styling and rentals
 business serving the Greater Toronto Area and beyond.
 
+## Live Website
+
+[View the website]((https://abushumailmoin.github.io/decor-business-website/))
+
 ## Features
 
 - Navigation links to each page section

@@ -5,7 +5,7 @@ business serving the Greater Toronto Area and beyond.
 
 ## Live Website
 
-[View the website]((https://abushumailmoin.github.io/decor-business-website/))
+[View the website](https://abushumailmoin.github.io/decor-business-website/)
 
 ## Features
 

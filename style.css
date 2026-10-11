@@ -231,3 +231,18 @@ html {
         scroll-behavior: auto;
     }
 }
+
+.skip-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+    padding: 12px 20px;
+    background-color: #302821;
+    color: #ffffff;
+    transform: translateY(-200%);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
+}

@@ -21,7 +21,8 @@
     <nav>
         <a href="#" class="logo">That’s So Chic TO</a>
 
-        <ul class="nav-links">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="site-navigation" hidden>Menu</button>
+        <ul class="nav-links" id="site-navigation">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -32,6 +33,7 @@
 <main id="main-content" tabindex="-1">
 
     <section class="hero">
+        <p class="eyebrow">Event styling & rentals · Greater Toronto Area</p>
         <h1>Beautiful Decor for Unforgettable Moments</h1>
 
         <p>
@@ -40,6 +42,7 @@
         </p>
 
         <a href="#contact" class="hero-button">Plan Your Event</a>
+        <a href="#gallery" class="text-link">Explore decor inspiration <span aria-hidden="true">↗</span></a>
     </section>
 
     <section id="about" class="about">
@@ -64,6 +67,10 @@
                 for your special day.
             </p>
         </article>
+        <article class="service-card">
+            <h3>Decor Rentals</h3>
+            <p>Tell us which pieces you have in mind, and ask about options and availability for your celebration.</p>
+        </article>
 
         <article class="service-card">
             <h3>Birthday Celebrations</h3>
@@ -83,6 +90,16 @@
     </div>
 </section>
 
+<section class="process" aria-labelledby="process-heading">
+    <p class="eyebrow">From an idea to a celebration</p>
+    <h2 id="process-heading">Start with your story.</h2>
+    <ol class="process-steps">
+        <li><h3>Share your plans</h3><p>Tell us your occasion, date, location, and the atmosphere you want to create.</p></li>
+        <li><h3>Explore the details</h3><p>Discuss your inspiration, styling needs, rental options, and budget with us.</p></li>
+        <li><h3>Confirm your celebration</h3><p>Agree on availability, scope, and arrangements directly before booking.</p></li>
+    </ol>
+</section>
+
 <section id="gallery" class="gallery">
     <h2>Decor Inspiration</h2>
     <p class="gallery-intro">
@@ -90,23 +107,28 @@
     </p>
 
     <div class="gallery-grid">
+        <figure>
         <img
             src="images/Decorstage1.jpg"
             alt="Event stage with warm orange lighting and floral decor"
             loading="lazy"
         >
-
+        <figcaption>Warm glow <span>Floral details & rich colour</span></figcaption>
+        </figure><figure>
         <img
             src="images/Decorstage3.jpg"
             alt="Event stage with white and gold draping"
             loading="lazy"
         >
-
+        <figcaption>Timeless elegance <span>White draping & gold accents</span></figcaption>
+        </figure><figure>
         <img
             src="images/Decorstage2.jpeg"
             alt="Event stage with pink and purple draping"
             loading="lazy"
         >
+        <figcaption>A little romance <span>Pink & purple layers</span></figcaption>
+        </figure>
     </div>
 </section>
 
@@ -118,6 +140,26 @@
         to discuss your ideas, styling needs, and availability.
     </p>
 
+    <noscript><p>To discuss your event, use the Instagram contact link below.</p></noscript>
+    <form id="inquiry-form" class="inquiry-form" hidden>
+        <p class="form-intro">Build a short inquiry to copy into an Instagram message. This form does not send or store your details.</p>
+        <div class="form-grid">
+            <label>Your name<input name="name" autocomplete="name" maxlength="100" required></label>
+            <label>Occasion<select name="occasion" required><option value="">Choose an occasion</option><option>Wedding</option><option>Birthday</option><option>Shower</option><option>Anniversary</option><option>Other celebration</option></select></label>
+            <label>Event date (optional)<input type="date" name="date"></label>
+            <label>City or venue<input name="location" maxlength="200" required placeholder="e.g. Toronto"></label>
+            <label>What do you need?<select name="service"><option>Styling and decor</option><option>Decor rentals</option><option>Styling and rentals</option><option>I’d like some guidance</option></select></label>
+            <label>Budget (optional)<input name="budget" maxlength="100" placeholder="Your planned decor budget"></label>
+        </div>
+        <label>Your ideas (optional)<textarea name="ideas" rows="3" maxlength="2000" placeholder="Colours, theme, guest count, or details you love…"></textarea></label>
+        <button class="hero-button" type="submit">Create My Inquiry <span aria-hidden="true">↗</span></button>
+        <div id="inquiry-result" hidden>
+            <label>Your message<textarea id="inquiry-message" rows="8" readonly></textarea></label>
+            <button type="button" id="copy-inquiry" class="secondary-button">Copy message</button>
+            <p id="copy-status" role="status" aria-live="polite"></p>
+            <p>Next, open Instagram below and paste this message into a DM to @thatssochic.to. Your inquiry has not been sent.</p>
+        </div>
+    </form>
     <a
         href="https://www.instagram.com/thatssochic.to/"
         class="hero-button"

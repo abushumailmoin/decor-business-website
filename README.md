@@ -15,6 +15,24 @@ business serving the Greater Toronto Area and beyond.
 - Responsive image gallery
 - Instagram inquiry link
 - Smooth scrolling that respects reduced-motion preferences
+- Warm editorial typography and responsive service and gallery layouts
+- Keyboard-accessible mobile navigation
+- Decor rentals and a three-step event-planning guide
+- Local inquiry builder with copy-to-clipboard and manual-copy fallback
+
+## Inquiries
+
+The inquiry builder prepares a message in the visitor's browser. It does not
+send inquiries or save personal information. Visitors copy the message and
+paste it into an Instagram DM to @thatssochic.to. The Instagram link also
+works without JavaScript. There is no backend, booking confirmation, or
+payment collection.
+
+## Next steps
+
+1. Replace the clearly labelled inspiration images with approved business photos.
+2. Confirm the rental inventory, service area, and booking arrangements.
+3. If desired, connect a business inbox or inquiry service for direct submissions.
 
 ## Built With
 
